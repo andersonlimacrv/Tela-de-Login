@@ -5,11 +5,11 @@
 Este projeto consiste em uma tela de login responsiva desenvolvida para ser utilizada em smartphones. A tela é simples, porém eficiente e intuitiva para o usuário.
 
 ## <p align="center">Tecnologias Utilizadas</p>
-<div align="center">
+<p align="center">
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-</div>
+</p>
 
 ## <p align="center">Como Utilizar</p>
 
@@ -21,7 +21,7 @@ Para utilizar esta tela de login, siga os seguintes passos:
 
 ## <p align="center">Layout Responsivo</p>
 
-A tela de login foi desenvolvida utilizando o framework Bootstrap 4, o que garante que ela seja responsiva e se adapte a diferentes tamanhos de tela, como os de smartphones.
+A tela de login foi desenvolvida utilizando o framework Bootstrap e media queries, o que garante que ela seja responsiva e se adapte a diferentes tamanhos de tela, como os de smartphones.
 
 ## <p align="center">Funcionalidades</p>
 
