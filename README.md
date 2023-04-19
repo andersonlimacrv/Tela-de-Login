@@ -1,6 +1,6 @@
 ![Exemplo da tela de login responsiva em um smartphone](https://raw.githubusercontent.com/seu-usuario/seu-repositorio/master/exemplo.png)
 
-## <span style="color:#FFC300">ahhahahahh</span>
+## <p align="center"> Projeto tela de Login Web e Smartphone.  </p>
 
 Este projeto consiste em uma tela de login responsiva desenvolvida para ser utilizada em smartphones. A tela é simples, porém eficiente e intuitiva para o usuário.
 
@@ -11,7 +11,7 @@ Este projeto consiste em uma tela de login responsiva desenvolvida para ser util
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
-## Como Utilizar
+## <p align="center">Como Utilizar</p>
 
 Para utilizar esta tela de login, siga os seguintes passos:
 
