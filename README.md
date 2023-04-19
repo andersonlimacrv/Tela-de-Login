@@ -1,6 +1,6 @@
 ![Exemplo da tela de login responsiva em um smartphone](https://raw.githubusercontent.com/seu-usuario/seu-repositorio/master/exemplo.png)
 
-<h1 style="color:red; text-align:center;">Tela de Login Responsiva para Smartphones</h1>
+# <center><h1 style="color:blue;">Tela de Login Responsiva para Smartphones</h1></center>
 
 
 Este projeto consiste em uma tela de login responsiva desenvolvida para ser utilizada em smartphones. A tela é simples, porém eficiente e intuitiva para o usuário.
