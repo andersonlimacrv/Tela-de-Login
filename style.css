@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
 
 }
@@ -113,6 +113,225 @@ body {
   animation: rotate_anti 3s linear infinite;
 }
 
+.p_logo {
+  margin-left: 3%;
+  font-family: 'Stencil Std', fantasy;
+  letter-spacing: .3rem;
+  color: #FFF;
+  /*4db8ff*/
+  font-size: 36px;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px rgba(179, 224, 255, 1);
+}
+
+.logo_sgem_animated {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.spinner {
+  position: relative;
+}
+
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  rotate: none;
+}
+
+/* --------------- FIM de stilização do LOGO --------------- */
+h1 {
+  max-width: 480px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: #FFF;
+  font-size: 30px
+}
+
+h1::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  align-items: center;
+  color: rgba(179, 224, 255, 1);
+  text-shadow: -2px -2px 0px #123,
+    -1px 1px 0px #123,
+    1px -1px 0px #123,
+    1px 0px 0px #123;
+}
+
+.button_in,
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_container {
+  width: 100%;
+  align-items: center;
+  padding: 3%;
+
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  font-size: 22pt;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+}
+
+input:hover {
+  border-bottom: 2px solid #FFF;
+}
+
+
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  transform: translateY(18px);
+  transition: .25 ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid Rgba(2, 254, 255, 1);
+  box-shadow: 0 1px 0 0 Rgba(2, 254, 255, 1);
+}
+
+input:focus+label {
+  transform: translateY(-14px) scale(0.8);
+  color: Rgba(2, 254, 255, 1);
+  font-weight: bold;
+  box-shadow: none;
+}
+
+input:not(:placeholder-shown)+label {
+  transform: translateY(-14px) scale(0.8);
+  color: SkyBlue;
+  font-weight: bold;
+}
+
+input:not(:placegolder-shown) {
+  border-bottom: 2px solid rgba(2, 254, 255, 1);
+  box-shadow: 0 1px 0 0 rgba(2, 254, 255, 1);
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+button {
+  padding: 15px 50px;
+  margin: 20px;
+  background: rgba(6, 13, 22, 1);
+  color: rgba(2, 254, 255, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: ease-in-out .25s;
+  letter-spacing: .3rem;
+  font-family: 'Stencil Std', fantasy;
+}
+
+button:hover {
+  background: rgba(20, 45, 79, 0.5);
+  color: rgba(2, 254, 255, 1);
+  border-radius: 50px;
+  background: linear-gradient(145deg, rgba(20, 45, 79, 1), rgba(24, 55, 97, 1));
+  box-shadow: 6px 6px 12px rgba(15, 34, 60, 1),
+    -6px -6px 12px rgba(29, 68, 122, 1);
+  border: 2px solid gainsboro;
+}
+
+.a-forgotpassword {
+  text-decoration: none;
+  color: #FFF;
+  margin: 10px;
+
+}
+
+.a-forgotpassword:hover {
+  color: SkyBlue;
+}
+
+.skill {
+  position: relative;
+  margin: 40px;
+  transition: .25s ease-in-out;
+}
+
+/* --------------- Ajuste de Responsividade --------------- */
+@media screen and (min-width: 1720px) {
+
+  .box,
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .box {
+    width: 70vw;
+    height: 90vh;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 720px) {
+  .box {
+    width: 80vw;
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .box {
+    width: 100vw;
+    height: 90vh;
+
+  }
+}
+
+/* --------------- Rotações dos spinners do logo --------------- */
 @keyframes rotate {
   0% {
     transform: rotateZ(0deg);
@@ -226,218 +445,5 @@ body {
   100% {
     box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5),
       inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
-  }
-}
-
-.p_logo {
-  margin-left: 3%;
-  font-family: 'Stencil Std', fantasy;
-  letter-spacing: .3rem;
-  color: #fff;
-  /*4db8ff*/
-  font-size: 36px;
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
-  text-shadow: 0 0 20px rgba(179, 224, 255, 1);
-}
-
-.logo_sgem_animated {
-  position: relative;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.spinner {
-  position: relative;
-}
-
-.letter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  rotate: none;
-}
-
-/* --------------- FIM de stilização do LOGO --------------- */
-h1 {
-  max-width: 480px;
-  text-align: center;
-  margin: 60px auto;
-  font-family: 'Courier New', Courier, monospace;
-  color: #fff;
-  font-size: 30px
-}
-
-h1::after {
-  content: '|';
-  opacity: 1;
-  margin-left: 5px;
-  display: inline-block;
-  animation: blink .7s infinite;
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-
-h2 {
-  font-size: 30px;
-  align-items: center;
-  color: #b3e0ff;
-  text-shadow: -2px -2px 0px #123,
-    -1px 1px 0px #123,
-    1px -1px 0px #123,
-    1px 0px 0px #123;
-}
-
-.button_in,
-.formulario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.input_container {
-  width: 100%;
-  align-items: center;
-  padding: 3%;
-
-}
-
-input {
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #FFF;
-  color: #FFF;
-}
-
-.input-field {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #FFF;
-  transform: translateY(18px);
-  transition: .25 ease-in-out;
-}
-
-input:focus {
-  border-bottom: 2px solid SkyBlue;
-  box-shadow: 0 1px 0 0 SkyBlue;
-}
-
-input:focus+label {
-  transform: translateY(-14px) scale(0.8);
-  color: Rgba(2, 254, 255, 1);
-  font-weight: bold;
-  box-shadow: none;
-}
-
-input:not(:placeholder-shown)+label {
-  transform: translateY(-14px) scale(0.8);
-  color: SkyBlue;
-  font-weight: bold;
-}
-
-input:not(:placegolder-shown) {
-  border-bottom: 2px solid rgba(2, 254, 255, 1);
-  box-shadow: 0 1px 0 0 rgba(2, 254, 255, 1);
-}
-
-input::placeholder {
-  color: transparent;
-}
-
-button {
-  padding: 15px 50px;
-  margin: 20px;
-  background: rgba(6, 13, 22, 1);
-  color: rgba(2, 254, 255, 1);
-  border-radius: 50px;
-  cursor: pointer;
-  transition: ease-in-out .25s;
-  letter-spacing: .3rem;
-  font-family: 'Stencil Std', fantasy;
-}
-
-button:hover {
-  background: rgba(20, 45, 79, 0.5);
-  color: rgba(2, 254, 255, 1);
-  border-radius: 50px;
-  background: linear-gradient(145deg, rgba(20, 45, 79, 1), rgba(24, 55, 97, 1));
-  box-shadow: 6px 6px 12px rgba(15, 34, 60, 1),
-    -6px -6px 12px rgba(29, 68, 122, 1);
-  border: 2px solid gainsboro;
-}
-
-.a-forgotpassword {
-  text-decoration: none;
-  color: #FFF;
-  margin: 10px;
-
-}
-
-.a-forgotpassword:hover {
-  color: SkyBlue;
-}
-
-.skill {
-  position: relative;
-  margin: 40px;
-  transition: .25s ease-in-out;
-}
-
-@media screen and (min-width: 1720px) {
-
-  .box,
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 25%;
-
-
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .box {
-    width: 70vw;
-    height: 90vh;
-    margin: 0 10px;
-  }
-}
-
-@media screen and (max-width: 1279px) and (min-width: 720px) {
-  .box {
-    width: 80vw;
-    height: 90vh;
-  }
-}
-
-@media screen and (max-width: 719px) {
-  .box {
-    width: 100vw;
-    height: 90vh;
-
   }
 }
