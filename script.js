@@ -1,4 +1,4 @@
-class Maquina {
+class Letreiro {
 
     constructor(EffectElement) {
         this.EffectElement = document.querySelector(EffectElement);
@@ -16,6 +16,6 @@ class Maquina {
     }
 
 }
-const MaquinaStart = new Maquina('h1');
+const LetreiroStart = new Letreiro('h1');
 
-MaquinaStart.init();
+LetreiroStart.init();
