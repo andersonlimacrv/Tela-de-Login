@@ -40,6 +40,7 @@ body {
   -webkit-box-shadow: 8px 8px 0px rgba(6, 13, 22, 1), -8px -8px 0px rgba(22, 51, 90, .7);
   box-shadow: 8px 8px 0px rgba(6, 13, 22, .8), -8px -8px 0px rgba(22, 51, 90, .7);
   border: 1px solid rgba(14, 32, 56, .8);
+  overflow: hidden;
 }
 
 /* --------------- Início de estilização do LOGO --------------- */
@@ -260,9 +261,37 @@ body {
 }
 
 /* --------------- FIM de stilização do LOGO --------------- */
-
-
 h1 {
+  max-width: 480px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  font-size: 30px
+}
+
+h1::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+h2 {
   font-size: 30px;
   align-items: center;
   color: #b3e0ff;
