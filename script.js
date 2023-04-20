@@ -19,3 +19,7 @@ class Letreiro {
 const LetreiroStart = new Letreiro('h1');
 
 LetreiroStart.init();
+
+setInterval(function () {
+    LetreiroStart.init();
+}, 15000);
