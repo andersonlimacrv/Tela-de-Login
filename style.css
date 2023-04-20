@@ -1,0 +1,414 @@
+:root {
+  --color-titulo: rgba(224, 224, 224, 1);
+  --color-fieldset: rgba(158, 158, 158, 1);
+  --color-label-content: rgba(120, 120, 148, 0.5);
+  --color-label-content-frame: rgba(38, 45, 71, 0.5);
+  --color-input: rgba(38, 45, 71, 1);
+  --color-body-background-aux1: rgba(20, 45, 79, 1);
+  --color-body-background-aux2: rgba(31, 31, 31, 1);
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 3vh 0;
+  background-image: url('fundo-editado.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 18px;
+  width: auto;
+  background-color: rgba(20, 45, 79, .9);
+  -webkit-box-shadow: 8px 8px 0px rgba(6, 13, 22, 1), -8px -8px 0px rgba(22, 51, 90, .7);
+  box-shadow: 8px 8px 0px rgba(6, 13, 22, .8), -8px -8px 0px rgba(22, 51, 90, .7);
+  border: 1px solid rgba(14, 32, 56, .8);
+}
+
+/* --------------- Início de estilização do LOGO --------------- */
+.semi_arc {
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgba(2, 254, 255, 1);
+  background: transparent;
+  border-radius: 50%;
+  transform: rotateZ(0deg);
+  transition: box-shadow 3s ease;
+  text-align: center;
+  line-height: 100px;
+}
+
+.semi_arc:hover {
+  box-shadow: 0px 0px 30px rgba(2, 254, 255, 0.8);
+  transition: 0.3s;
+}
+
+.semi_arc_3 {
+  content: "";
+  position: absolute;
+  width: 94%;
+  height: 94%;
+  left: 3%;
+  top: 3%;
+  border: 2px solid rgba(2, 254, 255, 1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotate 5s linear infinite;
+  text-align: center;
+  line-height: 129px;
+}
+
+.e5 {
+  width: 200px;
+  height: 200px;
+}
+
+.e5_1 {
+  color: rgba(2, 255, 255, 0.15);
+  border: 2px solid;
+  border-left: 2px solid transparent;
+  animation: rotate 11s linear infinite;
+}
+
+.e5_2 {
+  color: rgba(2, 255, 255, 0.7);
+  border: 5px solid;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  animation: rotate_anti 5s linear infinite;
+}
+
+.e5_3 {
+  color: rgba(2, 255, 255, 0.3);
+  border: 2px solid;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  animation: rotate 4s linear infinite;
+}
+
+.e5_4 {
+  color: rgba(2, 255, 255, 0.15);
+  border: 5px solid;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  animation: rotate_anti 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate_anti {
+  0% {
+    transform: rotateZ(360deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes colour_ease {
+  0% {
+    border-color: rgba(2, 254, 255, 1);
+  }
+
+  50% {
+    border-color: rgba(2, 254, 255, 0.5);
+  }
+
+  100% {
+    border-color: rgba(2, 254, 255, 1);
+  }
+}
+
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  40% {
+    box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 16px 6px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 100px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  60% {
+    box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  100% {
+    box-shadow: 0px 0px 16px 8px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+}
+
+@keyframes flicker2 {
+  0% {
+    box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  40% {
+    box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 50px 17px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 100px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  60% {
+    box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+
+  100% {
+    box-shadow: 0px 0px 60px 25px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 4px 2px rgba(21, 211, 233, 0.3);
+  }
+}
+
+@keyframes big_flicker {
+  0% {
+    box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
+  }
+
+  40% {
+    box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 35px 17px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 50px 40px rgba(21, 211, 233, 0.3);
+  }
+
+  60% {
+    box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
+  }
+
+  100% {
+    box-shadow: 0px 0px 40px 20px rgba(150, 255, 255, 0.5),
+      inset 0px 1px 30px 15px rgba(21, 211, 233, 0.3);
+  }
+}
+
+.p_logo {
+  margin-left: 3%;
+  font-family: 'Stencil Std', fantasy;
+  letter-spacing: .3rem;
+  color: #fff;
+  /*4db8ff*/
+  font-size: 36px;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px rgba(179, 224, 255, 1);
+}
+
+.logo_sgem_animated {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.spinner {
+  position: relative;
+}
+
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  rotate: none;
+}
+
+/* --------------- FIM de stilização do LOGO --------------- */
+
+
+h1 {
+  font-size: 30px;
+  align-items: center;
+  color: #b3e0ff;
+  text-shadow: -2px -2px 0px #123,
+    -1px 1px 0px #123,
+    1px -1px 0px #123,
+    1px 0px 0px #123;
+}
+
+.button_in,
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_container {
+  width: 100%;
+  align-items: center;
+  padding: 3%;
+
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  transform: translateY(18px);
+  transition: .25 ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid SkyBlue;
+  box-shadow: 0 1px 0 0 SkyBlue;
+}
+
+input:focus+label {
+  transform: translateY(-14px) scale(0.8);
+  color: Rgba(2, 254, 255, 1);
+  font-weight: bold;
+  box-shadow: none;
+}
+
+input:not(:placeholder-shown)+label {
+  transform: translateY(-14px) scale(0.8);
+  color: SkyBlue;
+  font-weight: bold;
+}
+
+input:not(:placegolder-shown) {
+  border-bottom: 2px solid rgba(2, 254, 255, 1);
+  box-shadow: 0 1px 0 0 rgba(2, 254, 255, 1);
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+button {
+  padding: 15px 50px;
+  margin: 20px;
+  background: rgba(6, 13, 22, 1);
+  color: rgba(2, 254, 255, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: ease-in-out .25s;
+  letter-spacing: .3rem;
+  font-family: 'Stencil Std', fantasy;
+}
+
+button:hover {
+  background: rgba(20, 45, 79, 0.5);
+  color: rgba(2, 254, 255, 1);
+  border-radius: 50px;
+  background: linear-gradient(145deg, rgba(20, 45, 79, 1), rgba(24, 55, 97, 1));
+  box-shadow: 6px 6px 12px rgba(15, 34, 60, 1),
+    -6px -6px 12px rgba(29, 68, 122, 1);
+  border: 2px solid gainsboro;
+}
+
+.a-forgotpassword {
+  text-decoration: none;
+  color: #FFF;
+  margin: 10px;
+
+}
+
+.a-forgotpassword:hover {
+  color: SkyBlue;
+}
+
+.skill {
+  position: relative;
+  margin: 40px;
+  transition: .25s ease-in-out;
+}
+
+@media screen and (min-width: 1720px) {
+
+  .box,
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25%;
+
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .box {
+    width: 70vw;
+    height: 90vh;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 720px) {
+  .box {
+    width: 80vw;
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .box {
+    width: 100vw;
+    height: 90vh;
+
+  }
+}
